@@ -64,7 +64,7 @@ from stock import number
 
 api.add_resource(hello.HelloWorld, '/')
 api.add_resource(history.History, '/history')
-api.add_resource(twse.TWSE_Quote, '/quote')
+api.add_resource(twse.TWSE_Quote, '/quote/<string:no>/<date>')
 api.add_resource(number.GetNumber, '/number')
 api.add_resource(number.BaseInfo, '/base')
 
